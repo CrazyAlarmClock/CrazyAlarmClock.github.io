@@ -463,7 +463,9 @@
     "Expiration_time" : "Время окончания срока действия",
     "expired": "\n истекший",
     "Get_payment_to": "Получить платеж",
-    "Currency": "Валюта"
+    "Currency": "Валюта",
+    "dynamic_transfers": "Динамические переводы",
+    "dynamic_payments": "Динамические платежи"
 
 
 

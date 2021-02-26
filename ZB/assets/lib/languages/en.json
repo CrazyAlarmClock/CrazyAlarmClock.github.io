@@ -462,7 +462,10 @@
     "Expiration_time" : "Expiration time",
     "expired": "\n expired",
     "Get_payment_to": "Get payment",
-    "Currency": "Currency"
+    "Currency": "Currency",
+    "dynamic_transfers": "Dynamic transfers",
+    "dynamic_payments": "Dynamic payments"
+
 
 }
 
