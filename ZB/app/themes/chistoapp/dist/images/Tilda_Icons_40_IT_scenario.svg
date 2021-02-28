@@ -1,0 +1,15 @@
+<svg width="149" height="197" viewBox="0 0 149 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.75" y="0.75" width="132.5" height="195.5" rx="15.25" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="58" y1="144" x2="84" y2="144" stroke="black" stroke-width="2"/>
+<line x1="58" y1="93" x2="84" y2="93" stroke="black" stroke-width="2"/>
+<line x1="58" y1="87" x2="121" y2="87" stroke="black" stroke-width="2"/>
+<line x1="58" y1="139" x2="121" y2="139" stroke="black" stroke-width="2"/>
+<line x1="58" y1="41" x2="84" y2="41" stroke="black" stroke-width="2"/>
+<line x1="58" y1="35" x2="121" y2="35" stroke="black" stroke-width="2"/>
+<rect x="15.75" y="72.75" width="30.5" height="30.5" rx="2.25" fill="white" stroke="black" stroke-width="1.5"/>
+<rect x="15.75" y="20.75" width="30.5" height="30.5" rx="2.25" fill="white" stroke="black" stroke-width="1.5"/>
+<rect x="15.75" y="124.75" width="30.5" height="30.5" rx="2.25" fill="white" stroke="black" stroke-width="1.5"/>
+<rect x="139.404" y="165.569" width="137.775" height="8.5" rx="1.25" transform="rotate(-90 139.404 165.569)" fill="white" stroke="black" stroke-width="1.5"/>
+<path d="M146.355 165.819L143.51 168.921L140.724 165.766L146.355 165.819Z" fill="white" stroke="black" stroke-width="1.5"/>
+<circle cx="31" cy="36" r="7.25" fill="white" stroke="black" stroke-width="1.5"/>
+</svg>
