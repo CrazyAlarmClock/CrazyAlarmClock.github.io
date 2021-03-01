@@ -1,12 +1,71 @@
 <html lang="ru" class="aos">
 
 <head>
+<meta charset="utf-8">
     <title>ChistoApp</title>
     <script src="wp/wp-includes/blocks/mainPage/standartStyleInclude.js"></script>
 
     <link rel="stylesheet" href="wp/wp-includes/css/dist/block-library/style-custom.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<style>
+@media (min-width: 60px)
+{
+   .splash1img {
+      background: url('app/themes/chistoapp/dist/images/splash1.jpg') no-repeat top center;
+      background-size: cover;
+   }
+   
+   .splash2img {
+      background: url('app/themes/chistoapp/dist/images/splash2.jpg') no-repeat top center;
+      background-size: cover;
+   }
+
+   .splash3img {
+      background: url('app/themes/chistoapp/dist/images/splash3_mobile.jpg') no-repeat top right;
+      background-size: cover;
+   }
+
+   .splash4img {
+      background: url('app/themes/chistoapp/dist/images/splash4_mobile.jpg') no-repeat top right;
+      background-size: cover;
+   }
+   
+   .h1main {
+      margin-top: 230px;
+   }
+}
+
+@media (min-width: 600px)
+{
+   .splash1img {
+      background-image: url('app/themes/chistoapp/dist/images/splash1.jpg') !important;
+      background-size: cover !important;
+   }
+
+   .splash2img {
+      background-image: url('app/themes/chistoapp/dist/images/splash2.jpg') !important;
+      background-size: cover !important;
+   }
+   
+   .splash3img {
+      background: url('app/themes/chistoapp/dist/images/splash3.jpg') no-repeat top center !important;
+      background-size: cover !important;
+   }
+   
+   .splash4img {
+      background: url('app/themes/chistoapp/dist/images/splash4.jpg') no-repeat top right !important;
+      background-size: cover !important;
+   }
+
+   .h1main {
+      margin-top: 0px;
+   }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -22,7 +81,7 @@
         
         <section data-aos class="hero" data-aos>
             <div class="carousel-hero js-carousel-hero">
-                <div class="item full-view js-scroll" style="background-image: url('app/themes/chistoapp/dist/images/splash1.jpg'); background-size: cover;">
+                <div class="item full-view js-scroll splash1img">
                     <div class="item-background position-left-bottom js-scroll-elem"></div>
                     <div class="container">
                         <div class="row">
@@ -38,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item full-view js-scroll" style="background-image: url('app/themes/chistoapp/dist/images/splash2.jpg'); background-size: cover;">
+                <div class="item full-view js-scroll splash2img">
                     <div class="item-background position-left-bottom js-scroll-elem"></div>
                     <div class="container">
                         <div class="row">
@@ -55,13 +114,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="item full-view js-scroll" style="background: url('app/themes/chistoapp/dist/images/splash3.jpg') no-repeat top center; background-size: cover;">
+                <div class="item full-view js-scroll splash3img">
                     <div class="item-background position-left-bottom js-scroll-elem"></div>
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-lg-7">
                                 <div class="item-textarea ">
-                                    <h1><strong><span style="font-size: 3.6em;">СКАЧАЙТЕ СЕЙЧАС!</span></strong></h1>
+                                    <h1 class="h1main"><strong><span style="font-size: 3.6em;">СКАЧАЙТЕ СЕЙЧАС!</span></strong></h1>
                                     <h2><strong><span style="font-size: 5.5em;"></span></strong></h2>
                                     <p><span style="font-size: 1.3em;"><b>Откройте для себя наше приложение</b></span></p>
                                     <p><span style="font-weight: 400;">Узнайте все о функциях нашего приложения </span><span style="text-decoration: underline;"><a href="app-download/"><span style="font-weight: 400;">тут</span></a>
@@ -77,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item full-view js-scroll" style="background: url('app/themes/chistoapp/dist/images/splash4.jpg') no-repeat top right; background-size: cover;">
+                <div class="item full-view js-scroll splash4img">
                     <div class="item-background position-left-bottom js-scroll-elem"></div>
                     <div class="container">
                         <div class="row">
