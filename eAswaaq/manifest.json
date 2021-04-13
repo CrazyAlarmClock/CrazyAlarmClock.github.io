@@ -1,11 +1,11 @@
 {
-    "name": "ZB",
-    "short_name": "ZB",
+    "name": "eAswaaq",
+    "short_name": "eAswaaq",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "eAswaaq",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
