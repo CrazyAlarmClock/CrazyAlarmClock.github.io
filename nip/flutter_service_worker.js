@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "7c67b469c631729d55827c93abf4aaf6",
-"/": "7c67b469c631729d55827c93abf4aaf6",
+  "index.html": "3f359f0a3f82c343c59a935d4fe7718a",
+"/": "3f359f0a3f82c343c59a935d4fe7718a",
 "test/widget_test.dart": "050bf15268c8044be4f0ba0f15bddb8d",
 "main.dart.js": "d555e826158eae672c567a0a6ff57e24",
 "config.js": "657ddfb2ec19d513419b0bf3a7ca70d6",
@@ -630,8 +630,7 @@ const RESOURCES = {
 "assets/assets/webViewAutoText/marketplace.js": "b71a867180bcc6bc70c20c40800638d4",
 "assets/assets/Inter-ExtraBoldItalic.otf": "00814356f03b15b04fea23026aab33b5",
 "assets/assets/Inter-BoldItalic.otf": "bc15d5294ed7ae49ba6494669e4137af",
-"assets/assets/Inter-LightItalic.otf": "2c6a6b50ced943463617f91d126002c3",
-"%D0%90%D1%80%D1%85%D0%B8%D0%B2.zip": "e24f43d3797ee2b0d16556fffe4a7c80"
+"assets/assets/Inter-LightItalic.otf": "2c6a6b50ced943463617f91d126002c3"
 };
 
 // The application shell files that are downloaded before a service worker can
