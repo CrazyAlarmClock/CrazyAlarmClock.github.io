@@ -3,10 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "6a7e501994c34f2ff432c3f69dff339b",
-"/": "6a7e501994c34f2ff432c3f69dff339b",
+  "index.html": "7c67b469c631729d55827c93abf4aaf6",
+"/": "7c67b469c631729d55827c93abf4aaf6",
 "test/widget_test.dart": "050bf15268c8044be4f0ba0f15bddb8d",
-"main.dart.js": "28e2497496001372075222e0d82b1b86",
+"main.dart.js": "d555e826158eae672c567a0a6ff57e24",
 "config.js": "657ddfb2ec19d513419b0bf3a7ca70d6",
 "README.md": "819ac07eefd10498065880dd0d4e318e",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
@@ -15,7 +15,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "bfa5821c607e6b00f6074d883b1908ac",
 "lib/main.dart": "fd7cc9c62ac0ed61b813f607d2368e49",
-"assets/AssetManifest.json": "01cca839db8eaa998ec8845e9815ad3d",
+"assets/AssetManifest.json": "8eae9c81cca13b5dad75f1b149658feb",
 "assets/NOTICES": "99d111723f4c8c5b964e0c18c5f26662",
 "assets/FontManifest.json": "1f6bbb2a1aa3ab65aaa9bad57e4a2745",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
@@ -447,6 +447,7 @@ const RESOURCES = {
 "assets/assets/images/3.0x/back.png": "522bbd824d15ecdfe32fd205900acf3c",
 "assets/assets/images/sidebar-icon-internet.png": "1273a205691587de1ff54df821ced94b",
 "assets/assets/images/pfm_10.png": "d0dae3eda011b784f8c1117d94a55fb4",
+"assets/assets/images/ic_cart.png": "7c51e45a6e2a74d573cd3269ab932642",
 "assets/assets/images/sidebar_icon_goal.png": "92ada17a9e0b4ed0a8fb8c7b4d55feed",
 "assets/assets/images/circle_for_currency.png": "3a60ce1e91c9226dbb07aa29a4839c08",
 "assets/assets/images/bg_loginWeb.png": "40d590931d90f8c2c6e0aec07663c49b",
@@ -629,7 +630,8 @@ const RESOURCES = {
 "assets/assets/webViewAutoText/marketplace.js": "b71a867180bcc6bc70c20c40800638d4",
 "assets/assets/Inter-ExtraBoldItalic.otf": "00814356f03b15b04fea23026aab33b5",
 "assets/assets/Inter-BoldItalic.otf": "bc15d5294ed7ae49ba6494669e4137af",
-"assets/assets/Inter-LightItalic.otf": "2c6a6b50ced943463617f91d126002c3"
+"assets/assets/Inter-LightItalic.otf": "2c6a6b50ced943463617f91d126002c3",
+"%D0%90%D1%80%D1%85%D0%B8%D0%B2.zip": "e24f43d3797ee2b0d16556fffe4a7c80"
 };
 
 // The application shell files that are downloaded before a service worker can
