@@ -1,281 +1,42 @@
-<html lang="ru" class="aos">
-
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-    <title>ChistoApp</title>
-    <script src="wp/wp-includes/blocks/mainPage/standartStyleInclude.js"></script>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-    <link rel="stylesheet" href="wp/wp-includes/css/dist/block-library/style-custom.css">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ZB">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-<style>
-@media (min-width: 60px)
-{
-   .splash1img {
-      background: url('app/themes/chistoapp/dist/images/splash1.jpg') no-repeat top center;
-      background-size: cover;
-   }
-   
-   .splash2img {
-      background: url('app/themes/chistoapp/dist/images/splash2.jpg') no-repeat top center;
-      background-size: cover;
-   }
-
-   .splash3img {
-      background: url('app/themes/chistoapp/dist/images/splash3_mobile.jpg') no-repeat top right;
-      background-size: cover;
-   }
-
-   .splash4img {
-      background: url('app/themes/chistoapp/dist/images/splash4_mobile.jpg') no-repeat top right;
-      background-size: cover;
-   }
-   
-   .h1main {
-      margin-top: 230px;
-   }
-}
-
-@media (min-width: 600px)
-{
-   .splash1img {
-      background-image: url('app/themes/chistoapp/dist/images/splash1.jpg') !important;
-      background-size: cover !important;
-   }
-
-   .splash2img {
-      background-image: url('app/themes/chistoapp/dist/images/splash2.jpg') !important;
-      background-size: cover !important;
-   }
-   
-   .splash3img {
-      background: url('app/themes/chistoapp/dist/images/splash3.jpg') no-repeat top center !important;
-      background-size: cover !important;
-   }
-   
-   .splash4img {
-      background: url('app/themes/chistoapp/dist/images/splash4.jpg') no-repeat top right !important;
-      background-size: cover !important;
-   }
-
-   .h1main {
-      margin-top: 0px;
-   }
-}
-
-</style>
+  <title>ZB</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcABPoJbgU2hqhO7Hn18etvI4U71DYxDg"></script>
 
 </head>
-
 <body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3432640954');
+      });
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
 
-    <div id="fb-root"></div>
-    
-    <div class="transition-wipe-out"></div>
-    <div class="transition-wipe-in" data-aos></div>
-    
-    <script src="wp/wp-includes/blocks/mainPage/transparentMenu.js"></script>
 
-    <main class="main header-overlay">
-        
-        <section data-aos class="hero" data-aos>
-            <div class="carousel-hero js-carousel-hero">
-                <div class="item full-view js-scroll splash1img">
-                    <div class="item-background position-left-bottom js-scroll-elem"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-7">
-                                <div class="item-textarea ">
-                                    <h2><span style="font-size: 4.2em;"><strong>СОБСТВЕННОЕ</strong></span></h2>
-                                    <h2><span style="font-size: 5.5em;"><strong>ОБОРУДОВАНИЕ</strong></span></h2>
-                                    <h1><span style="font-size: 3em;"><strong>ГАРАНТИЯ НАДЕЖНОСТИ</strong></span></h1>
-                                    <p><span style="font-size: 1.3em;"><strong>Мы используем собственное оборудование, что обеспечивает сохранность Ваших вещей.</strong></span></p>
+  <script type="text/javascript" src="config.js"></script>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item full-view js-scroll splash2img">
-                    <div class="item-background position-left-bottom js-scroll-elem"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-7">
-                                <div class="item-textarea ">
-                                    <h2><span style="font-size: 4.2em;"><strong>РЕШАЙ СВОИ</strong></span></h2>
-                                    <h2><span style="font-size: 5.5em;"><strong>ВОПРОСЫ</strong></span></h2>
-                                    <h1><span style="font-size: 3em;"><strong>ОДЕЖДА ЗА НАМИ</strong></span></h1>
-                                    <p><span style="font-size: 1.3em;"><strong>Получи свое секретное оружие ежедневного применения от 990 руб.</strong></span></p>
-                                    <p><span style="font-size: 1.1em;">Тебе не придется заботиться о своем внешнем виде, о нем позботимся мы! Вовремя напомним и достам тогда, когда удобно.</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item full-view js-scroll splash3img">
-                    <div class="item-background position-left-bottom js-scroll-elem"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-7">
-                                <div class="item-textarea ">
-                                    <h1 class="h1main"><strong><span style="font-size: 3.6em;">СКАЧАЙТЕ СЕЙЧАС!</span></strong></h1>
-                                    <h2><strong><span style="font-size: 5.5em;"></span></strong></h2>
-                                    <p><span style="font-size: 1.3em;"><b>Откройте для себя наше приложение</b></span></p>
-                                    <p><span style="font-weight: 400;">Узнайте все о функциях нашего приложения </span><span style="text-decoration: underline;"><a href="app-download/"><span style="font-weight: 400;">тут</span></a>
-                                        </span><span style="font-weight: 400;">или нажмите ниже, чтобы стать на шаг ближе к свободе от стирки.</span></p>
-                                    <div class="download-links"><a href="https://apps.apple.com/" target="_blank">
-                    <img src="app/themes/chistoapp/resources/assets/images/app-apple-store.png" alt="App Store" />
-                </a><a href="https://play.google.com" target="_blank">
-                    <img src="app/themes/chistoapp/resources/assets/images/app-google-play.png" alt="Google Play" />
-                </a></div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item full-view js-scroll splash4img">
-                    <div class="item-background position-left-bottom js-scroll-elem"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-7">
-                                <div class="item-textarea">
-                                    <h2><strong><span style="font-size: 3.6em;">ПОСТЕЛЬНОЕ БЕЛЬЕ </span></strong></h2>
-                                    <h2><strong><span style="font-size: 5.6em;">УЛОЖЕННОЕ</span></strong></h2>
-                                    <h2><strong><span style="font-size: 3.4em;">КАК В ОТЕЛЕ</span></strong></h2>
-                                    <p><span style="font-size: 1.1em;">Мы заботливо сложим Ваше белье, и оно будет приятно хрустеть от чистоты и свежести.</span></p>
-                                </div>
-                                </span>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section data-aos class="icon-instructions paint-white" data-aos>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="icon-instructions-textarea">
-                            <h2 class="icon-instructions-textarea__hdr hdr1A" data-aos>Как это работает?</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="icon-instructions-listing">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-lg-3 c">
-                            <div class="">
-                                <div style="text-align:center;">
-                                    <img class="img-fluid" srcset="app/themes/chistoapp/resources/assets/images/icon_phone_normres.png 1x, app/themes/chistoapp/resources/assets/images/icon_phone.png 2x" src="app/themes/chistoapp/resources/assets/images/icon_phone_normres.png" alt="" width="256" height="256" />
-                                </div>
-                                <div class="single-instruction-textarea">
-                                    <h3 class="featurette-heading-home">Забронируйте в приложении или онлайн</h2>
-                                    <p class="single-instruction-textarea__para">Выберите товары из нашего прайс-листа </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-3 c">
-                            <div class="">
-                                <div style="text-align:center;">
-                                    <img class="img-fluid" srcset="app/themes/chistoapp/resources/assets/images/icon_calendar_normres.png 1x, app/themes/chistoapp/resources/assets/images/icon_calendar.png 2x" src="app/themes/chistoapp/resources/assets/images/icon_calendar_normres.png" alt="" width="256" height="256" />
-                                </div>
-                                <div class="single-instruction-textarea">
-                                    <h3 class="featurette-heading-home">Выберите свое время</h3>
-                                    <p class="single-instruction-textarea__para">Выберите день и время для сбора и доставки. Курьер приедет в течении указанного часа.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-3 c">
-                            <div class="">
-                                <div style="text-align:center;">
-                                    <img class="img-fluid" srcset="app/themes/chistoapp/resources/assets/images/icon_delivery_normres.png 1x, app/themes/chistoapp/resources/assets/images/icon_delivery.png 2x" src="app/themes/chistoapp/resources/assets/images/icon_delivery_normres.png" alt="" width="256" height="256" />
-                                </div>
-                                <div class="single-instruction-textarea">
-                                    <h3 class="featurette-heading-home">Познакомьтесь с Вашим курьером</h3>
-                                    <p class="single-instruction-textarea__para">Мы встретим Вас с двумя мешками для белья; черный для химчистки или глажки белья, а синий - для стирки, сушки в стиральной машине и складывания.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-3 c">
-                            <div class="">
-                                <div style="text-align:center;">
-                                    <img class="img-fluid" srcset="app/themes/chistoapp/resources/assets/images/icon_wash_normres.png 1x, app/themes/chistoapp/resources/assets/images/icon_wash.png 2x" src="app/themes/chistoapp/resources/assets/images/icon_wash_normres.png" alt="" width="256" height="256" />
-                                </div>
-                                <div class="single-instruction-textarea">
-                                    <h3 class="featurette-heading-home">Экспертная стирка</h3>
-                                    <p class="single-instruction-textarea__para">Мы постираем, высушим и уложим Ваши вещи, а затем вернем Вам всего за 48 часов.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section data-aos class="service-listing paint-lavender" data-aos>
-            <div class="container">
-                <div class="service-listing-heading">
-                    <h2 class="service-listing-heading__hdr hdr1A" data-aos data-aos>Наши сервисы</h2>
-                </div>
-                <div class="service-listing-items">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4 c">
-                            <div class="single-item">
-                                <h3 class="single-item__hdr main-title-green">Сухая чистка и глажка белья</h3>
-                                <center>
-                                <img class="img-fluid" srcset="app/themes/chistoapp/resources/assets/images/icon_tshirt_normres.png 1x, app/themes/chistoapp/resources/assets/images/icon_tshirt.png 2x" src="app/themes/chistoapp/resources/assets/images/icon_tshirt_normres.png" alt="" width="256" height="256" />
-                                </center>
-                                <p class="single-item__para">Мы производим химчистку или стирку в соответствии с инструкциями на этикетке. Одежду гладят и вешают на вешалку.</p>
-                                <p class="single-item__label">От 2,60 ₽ за товар</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4 c">
-                            <div class="single-item">
-                                <h3 class="single-item__hdr main-title-green">Только утюг</h3>
-                                <center>
-                                <img class="img-fluid" srcset="app/themes/chistoapp/resources/assets/images/icon_iron_normres.png 1x, app/themes/chistoapp/resources/assets/images/icon_iron.png 2x" src="app/themes/chistoapp/resources/assets/images/icon_iron_normres.png" alt="" width="256" height="256" />
-                                </center>
-                                <p class="single-item__para">В некоторых регионах мы предлагаем только утюг для рубашек и блузок.</p>
-                                <p class="single-item__label">От 2,20 ₽ за товар</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4 c">
-                            <div class="single-item">
-                                <h3 class="single-item__hdr main-title-green">Стирка и сушка</h3>
-                                <center>
-                                <img class="img-fluid" srcset="app/themes/chistoapp/resources/assets/images/icon_washing_machine_normres.png 1x, app/themes/chistoapp/resources/assets/images/icon_washing_machine.png 2x" src="app/themes/chistoapp/resources/assets/images/icon_washing_machine_normres.png" alt="" width="256" height="256" />
-                                </center>
-                                <p class="single-item__para">Мы стираем при 30 ° C, сушим в стиральной машине и аккуратно складываем одежду. Идеально подходит для повседневных вещей.</p>
-                                <p class="single-item__label">От 15 ₽ за 8 кг</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="service-listing-ctas">
-                    <div class="row justify-content-center">
-                        <div class="col-xs-12 col-md-6 col-lg-5 col-xl-4">
-                            <a class="service-listing-ctas__btn service-listing-ctas__btn--first btn1A" href="/services/">
-                  <span>Узнать больше</span>
-                </a>
-                            <a class="service-listing-ctas__btn service-listing-ctas__btn--last btn1C" href="/pricing/">
-                  <span>Посмотреть цены</span>
-                </a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        
-        
-    </main>
-
-    <script src="wp/wp-includes/blocks/mainPage/footer.js"></script>
-    <script src="wp/wp-includes/blocks/mainPage/ajax.js"></script>
-
+  <script src="main.dart.js?v=3432640954" type="application/javascript"></script>
+</body>
 </html>
