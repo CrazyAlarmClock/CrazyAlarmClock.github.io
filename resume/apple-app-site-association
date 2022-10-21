@@ -6,7 +6,7 @@
         "details": [
             {
                 "appID": "JYXPUKMVB6.com.punkte",
-                "paths": [ "/station/*"]
+                "paths": [ "*"]
             }
         ]
     }
