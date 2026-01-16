@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavel Malyshev | Team Lead & Flutter Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Roboto"', 'sans-serif'],
+              heading: ['"Outfit"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '2.5rem',
+            },
+            colors: {
+              m3: {
+                sys: {
+                  primary: '#D0BCFF',
+                  onPrimary: '#381E72',
+                  primaryContainer: '#4F378B',
+                  onPrimaryContainer: '#EADDFF',
+                  
+                  secondary: '#CCC2DC',
+                  onSecondary: '#332D41',
+                  secondaryContainer: '#4A4458',
+                  onSecondaryContainer: '#E8DEF8',
+
+                  tertiary: '#EFB8C8',
+                  onTertiary: '#492532',
+                  tertiaryContainer: '#633B48',
+                  onTertiaryContainer: '#FFD8E4',
+
+                  // Surfaces for Depth
+                  surface: '#141218', 
+                  surfaceDim: '#110F15',
+                  surfaceBright: '#3B383E',
+                  surfaceContainerLowest: '#0F0D13',
+                  surfaceContainerLow: '#1D1B20',
+                  surfaceContainer: '#211F26',
+                  surfaceContainerHigh: '#2B2930',
+                  surfaceContainerHighest: '#36343B',
+
+                  outline: '#938F99',
+                  outlineVariant: '#49454F',
+                }
+              }
+            },
+            animation: {
+              blob: "blob 7s infinite",
+            },
+            keyframes: {
+              blob: {
+                "0%": { transform: "translate(0px, 0px) scale(1)" },
+                "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                "100%": { transform: "translate(0px, 0px) scale(1)" },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Utilities */
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0F0D13; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #49454F; 
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #79747E; 
+      }
+      body {
+        background-color: #000000; 
+        color: #E6E1E5;
+        overflow-x: hidden;
+      }
+      
+      /* Material You Surface Card Style */
+      .surface-card {
+        background-color: rgba(33, 31, 38, 0.8); /* surface-container with opacity */
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-radius: 1.5rem; /* 24px - Standard M3 corner */
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: background-color 0.2s ease, transform 0.2s ease;
+      }
+
+      .surface-card:hover {
+        background-color: rgba(43, 41, 48, 0.9); /* Lighter on hover */
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-28k6pwzl.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
