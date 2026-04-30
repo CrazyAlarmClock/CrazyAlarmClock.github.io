@@ -21,27 +21,27 @@ const experiences: ExperienceItem[] = [
     ],
     projects: [
         { 
-          name: "NDA (Enterprise / Импортозамещение)", 
+          name: "Enterprise-платформа / импортозамещение", 
           role: "", 
           description: "Роль: Frontend Team Lead (Vue.js). Руководил командой разработки единой точки управления виртуальной инфраструктурой." 
         },
         { 
-          name: "Rize (Crypto Banking)", 
+          name: "Финтех / crypto banking", 
           role: "", 
           description: "Роль: Tech Lead / Product Manager. Бизнес: Защитил стратегию перехода на Flutter (экономия бюджета), регулярно продавал и сдавал заказчику новые фичи. Разработка: Hands-on coding (архитектура на Flutter), код-ревью." 
         },
         { 
-          name: "Punkt E (IoT / Электрозарядные станции)", 
+          name: "IoT-платформа для зарядной инфраструктуры", 
           role: "", 
           description: "Роль: Team Lead Mobile & Web. Техника: Выстроил процессы с нуля. Лидировал создание личных кабинетов и приложения (лидер рынка РФ). Реализовал архитектуру IoT (Bluetooth)." 
         },
         { 
-          name: "Weera (Social Network)", 
+          name: "Социальный мобильный продукт", 
           role: "", 
           description: "Роль: Presale / Tech Lead (Native Mobile). Кризис-менеджмент: Принял проект в критическом состоянии (замена команды), восстановил темп, распределил ресурсы и довел до релиза." 
         },
         {
-          name: "R&D (AI & Automation)",
+          name: "R&D / AI-автоматизация",
           role: "",
           description: "Внедрение AI-агентов для автоматизации отчетности в закрытом контуре."
         }

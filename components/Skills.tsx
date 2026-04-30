@@ -27,7 +27,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "AI & Innovation",
     icon: Cpu,
-    skills: ["Local LLMs", "AI Agents", "On-device ML"]
+    skills: ["Local LLMs", "AI Agents", "On-device ML", "ComfyUI", "n8n", "OpenAI GPT", "Claude", "Gemini", "Cloud LLM APIs", "RAG", "Prompt Engineering"]
   },
   {
     title: "Frontend & Web",

@@ -16,7 +16,7 @@ export const Contact: React.FC = () => {
                     Открыт к предложениям
                 </h2>
                 <p className="text-m3-sys-onSurfaceVariant text-base md:text-lg mb-10 max-w-xl mx-auto relative z-10">
-                    Рассматриваю позиции Mobile Team Lead / Engineering Manager.
+                    Жду предложений о сотрудничестве.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-4 relative z-10">

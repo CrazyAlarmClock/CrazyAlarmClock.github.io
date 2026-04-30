@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Download, ArrowRight, User, Send } from 'lucide-react';
 import { Reveal } from './ui/Reveal';
-
+const avatarImg = new URL('../assets/avatar.jpg', import.meta.url).href;
 export const Hero: React.FC = () => {
   return (
     <section id="hero" className="flex flex-col justify-center pt-24 pb-16 relative">
@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
                         {/* Fallback Icon - Visible if image missing */}
                         <User size={80} className="text-m3-sys-onSurfaceVariant/40 absolute" />
                         <img 
-                          src="assets/avatar.jpg" 
+                          src={avatarImg} 
                           alt="Pavel Malyshev" 
                           className="w-full h-full object-cover relative z-10 transition-opacity duration-300"
                           style={{ objectPosition: "center top" }}
